@@ -1,0 +1,50 @@
+[
+{
+  "name": "basicdev",
+  "author": "InnovativeInventor",
+  "description": "Installs a basic developer's enviroment",
+  "includes": ["nano", "git"]
+}
+,{
+  "name": "flask",
+  "author": "InnovativeInventor",
+  "description": "Installs flask",
+  "includes": ["flask"]
+}
+,{
+  "name": "git",
+  "author": "InnovativeInventor",
+  "description": "Installs git",
+  "includes": ["git"]
+}
+,{
+  "name": "grip",
+  "author": "InnovativeInventor",
+  "description": "Installs grip",
+  "includes": ["grip"]
+}
+,{
+  "name": "nano",
+  "author": "InnovativeInventor",
+  "description": "Installs nano",
+  "includes": ["nano"]
+}
+,{
+  "name": "pydev",
+  "author": "InnovativeInventor",
+  "description": "Installs a standard python developer's enviroment",
+  "includes": ["basicdev", "pytest", "flask", "pyenv"]
+}
+,{
+  "name": "pyenv",
+  "author": "InnovativeInventor",
+  "description": "Installs pyenv",
+  "includes": ["curl", "pyev"]
+}
+,{
+  "name": "pytest",
+  "author": "InnovativeInventor",
+  "description": "Installs pytest",
+  "includes": ["pytest"]
+}
+]

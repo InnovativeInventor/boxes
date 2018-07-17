@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://ideas.homelabs.space/assets/css/style.css">
+
+    <title>Boxes</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.0.4/fuse.min.js"></script>
+
+<style>
+input[type=text] {
+    width: 100em;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    padding:1%;
+    margin: auto;
+    margin-top: 3em;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    height: 10px;
+    background-repeat: no-repeat;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+.background {
+  background-image: url("https://res.cloudinary.com/dvc7cmheg/image/upload/f_auto,q_auto:best/v1528424862/desk-background.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.result {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: left;
+  height:auto;
+  border-radius: 1em;
+  padding:3%;
+  margin:3%;
+  background-color:#FAFAFA;
+  font-size: medium;
+}
+.name {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: left;
+  height:auto;
+  border-radius: 1em;
+  background-color:#FAFAFA;
+  font-size: medium;
+  margin-right: 3em;
+  width: 10em;
+}
+.details {
+  justify-content: left;
+  height:auto;
+  font-size: medium;
+  position:relative;
+  left: 5em;
+  margin-right: 10em;
+}
+.white-footer {
+  color: #FAFAFA;
+  font-family: "Open Sans";
+  font-size: large;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.image-credits {
+  color: #858585; !important
+  font-size: medium; !important
+}
+.vertical {
+       border-left: thick solid #000000;
+       border-left-width:5px;
+       height:auto;
+}
+</style>
+
+</head>
+
+<body class="background" onload="initialLoad()">
+  <input type="text" name="search" id="search-bar" placeholder="Search..">
+  <div class="result_lists">
+  </div>
+
+  <section class="main-content white-footer">
+     <footer class="site-footer">
+      <p class="white-footer">Coded by <span onclick="window.location.href = 'https://github.com/InnovativeInventor'">InnovativeInventor. &copy;
+        <script type="text/javascript">
+         var dt = new Date();
+         document.write(dt.getYear()+1900);
+        </script>
+      </p>
+      <p class="image-credits" onclick=imageCredits()>Image credit<p>
+      </footer>
+    </section>
+</body>
+<script>
+function imageCredits() {
+  if (window.confirm('You are leaving this website. InnovativeInventor is NOT responsible for the content of the website you are going to. Continue if you understand the full risks of doing so.')) {
+    window.location.href = 'https://pixabay.com/en/users/freephotocc-2275370/'
+  }
+}
+function initialLoad() {
+  jQuery.get('/boxes.json', function(data) {
+    loadBoxes(data)
+  });
+}
+function loadBoxes(data) {
+  $( ".result_lists" ).empty();
+    for (var i = 0; i < data.length; i++){
+      var box = data[i];
+      const markup = `
+      <div class='result'>
+          <div class='name'>
+            <span>
+              <h1>${box.name}</h1>
+              <h5>Author: ${box.author}</h5>
+            </span>
+          </div>
+          <div class="vertical">
+            <br>
+          </div>
+          <div class='details'>
+            <p>
+              ${box.description}
+              </br>
+              <b>Includes:</b> <i>${box.includes}</i>
+            </p>
+          </div>
+      </div>
+    `;
+      $( ".result_lists" ).append( markup );
+    }
+  }
+  $('#search-bar').on('keyup', function() {
+    var options = {
+      shouldSort: true,
+      tokenize: true,
+      findAllMatches: true,
+      matchAllTokens: true,
+      threshold: 0.2,
+      location: 0,
+      distance: 4,
+      maxPatternLength: 15,
+      minMatchCharLength: 1,
+      keys: [
+        "name",
+        "description",
+        "includes"
+    ]
+    };
+
+    terms = document.getElementById("search-bar").value
+    if (terms === "") {
+        initialLoad()
+        return
+    }
+    jQuery.get('/boxes.json', function(data) {
+      var fuse = new Fuse(data, options);
+      searchResults = fuse.search(terms)
+      loadBoxes(searchResults)
+    });
+  });
+
+</script>
+</html>
