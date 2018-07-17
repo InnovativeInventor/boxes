@@ -1,0 +1,4 @@
+MONOBOX basicdev
+MONOBOX pytest
+MONOBOX flask
+MONOBOX pyenv
