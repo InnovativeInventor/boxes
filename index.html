@@ -121,7 +121,7 @@ function imageCredits() {
   }
 }
 function initialLoad() {
-  jQuery.get('/boxes.json', function(data) {
+  jQuery.get('https://raw.githubusercontent.com/InnovativeInventor/boxes/master/boxes.json', function(data) {
     loadBoxes(data)
   });
 }
@@ -175,7 +175,7 @@ function loadBoxes(data) {
         initialLoad()
         return
     }
-    jQuery.get('/boxes.json', function(data) {
+    jQuery.get('https://raw.githubusercontent.com/InnovativeInventor/boxes/master/boxes.json', function(data) {
       var fuse = new Fuse(data, options);
       searchResults = fuse.search(terms)
       loadBoxes(searchResults)
