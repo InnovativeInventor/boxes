@@ -1,0 +1,6 @@
+{
+  "name": "git",
+  "author": "InnovativeInventor",
+  "description": "Installs git",
+  "includes": ["git"]
+}

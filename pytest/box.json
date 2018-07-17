@@ -1,0 +1,6 @@
+{
+  "name": "pytest",
+  "author": "InnovativeInventor",
+  "description": "Installs pytest",
+  "includes": ["pytest"]
+}
