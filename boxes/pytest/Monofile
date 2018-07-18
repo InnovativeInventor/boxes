@@ -1,1 +1,1 @@
-RUN pip3 install -U pytest
+RUN pip3 install pytest
