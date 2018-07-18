@@ -1,6 +1,0 @@
-{
-  "name": "nano",
-  "author": "InnovativeInventor",
-  "description": "Installs nano",
-  "includes": ["nano"]
-}

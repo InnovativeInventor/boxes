@@ -25,7 +25,9 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-echo '[' > boxes.json
-for d in ./*/ ; do (cd "$d" && cat box.json >> ../boxes.json && printf ',' >> ../boxes.json ); done
-sed -i '$ s/.$//' boxes.json
-echo ']' >> boxes.json
+cd boxes
+echo '[' > ../boxes.json
+for d in ./*/ ; do (cd "$d" && cat box.json >> ../../boxes.json && printf ',' >> ../../boxes.json ); done
+sed -i '$ s/.$//' ../boxes.json
+echo ']' >> ../boxes.json
+jsonlint -i ../boxes.json
