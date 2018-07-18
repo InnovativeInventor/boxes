@@ -1,0 +1,6 @@
+{
+  "name": "basicdev",
+  "author": "InnovativeInventor",
+  "description": "Installs a basic developer's enviroment",
+  "includes": ["nano", "git", "curl"]
+}

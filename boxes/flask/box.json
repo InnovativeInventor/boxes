@@ -1,0 +1,6 @@
+{
+  "name": "flask",
+  "author": "InnovativeInventor",
+  "description": "Installs flask",
+  "includes": ["flask"]
+}

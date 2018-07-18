@@ -1,0 +1,9 @@
+command:
+  flask:
+    # required attributes
+    exit-status: 0
+    # optional attributes
+    stdout:
+    - "Usage: flask [OPTIONS] COMMAND [ARGS]..."
+    stderr: []
+    timeout: 10000 # in milliseconds

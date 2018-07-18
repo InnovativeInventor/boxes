@@ -1,0 +1,12 @@
+FROM debian:stretch
+
+LABEL maintainer="InnovativeInventor"
+
+RUN curl -fsSL https://goss.rocks/install | sh
+RUN apt-get update && apt-get install -y \
+    python3 \
+    && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y \
+    python3-pip \
+    && rm -rf /var/lib/apt/lists/*
+RUN pip3 install flask

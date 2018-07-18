@@ -1,0 +1,6 @@
+{
+  "name": "pydev",
+  "author": "InnovativeInventor",
+  "description": "Installs a standard python developer's enviroment",
+  "includes": ["basicdev", "pytest", "flask", "pyenv"]
+}

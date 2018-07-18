@@ -1,0 +1,6 @@
+{
+  "name": "pip",
+  "author": "InnovativeInventor",
+  "description": "Installs pip",
+  "includes": ["pip","python3"]
+}

@@ -1,0 +1,6 @@
+{
+  "name": "pyenv",
+  "author": "InnovativeInventor",
+  "description": "Installs pyenv",
+  "includes": ["curl", "pyev"]
+}

@@ -1,0 +1,10 @@
+command:
+  grip -h:
+    # required attributes
+    exit-status: 0
+    # optional attributes
+    stdout:
+    - "grip [options] [<path>] [<address>]"
+    stderr: []
+    timeout: 10000 # in milliseconds
+

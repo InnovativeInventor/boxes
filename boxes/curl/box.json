@@ -1,0 +1,6 @@
+{
+  "name": "curl",
+  "author": "InnovativeInventor",
+  "description": "Installs curl",
+  "includes": ["curl"]
+}

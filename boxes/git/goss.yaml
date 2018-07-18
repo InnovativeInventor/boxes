@@ -1,0 +1,16 @@
+package:
+  git:
+    installed: true
+    versions:
+    - 1:2.11.0-3+deb9u3
+
+command:
+  git:
+    # required attributes
+    exit-status: 0
+    # optional attributes
+    stdout:
+    - "usage: git "
+    stderr: []
+    timeout: 10000 # in milliseconds
+

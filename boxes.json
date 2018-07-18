@@ -5,7 +5,8 @@
     "description": "Installs a basic developer's enviroment",
     "includes": [
       "nano",
-      "git"
+      "git",
+      "curl"
     ]
   },
   {
@@ -49,6 +50,15 @@
     ]
   },
   {
+    "name": "pip",
+    "author": "InnovativeInventor",
+    "description": "Installs pip",
+    "includes": [
+      "pip",
+      "python3"
+    ]
+  },
+  {
     "name": "pydev",
     "author": "InnovativeInventor",
     "description": "Installs a standard python developer's enviroment",
@@ -74,6 +84,14 @@
     "description": "Installs pytest",
     "includes": [
       "pytest"
+    ]
+  },
+  {
+    "name": "python",
+    "author": "InnovativeInventor",
+    "description": "Installs python3",
+    "includes": [
+      "python3"
     ]
   }
 ]

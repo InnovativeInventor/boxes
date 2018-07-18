@@ -1,0 +1,16 @@
+package:
+  nano:
+    installed: true
+    versions:
+    - 2.7.4-1
+
+command:
+  nano -h:
+    # required attributes
+    exit-status: 0
+    # optional attributes
+    stdout:
+    - "Usage: nano"
+    stderr: []
+    timeout: 10000 # in milliseconds
+
