@@ -1,0 +1,11 @@
+FROM debian:stretch
+
+LABEL maintainer="InnovativeInventor"
+
+RUN apt-get update && apt-get install -y \
+    curl \
+    && rm -rf /var/lib/apt/lists/*
+RUN curl -fsSL https://goss.rocks/install | sh
+RUN apt-get update && apt-get install -y \
+    python3 \
+    && rm -rf /var/lib/apt/lists/*

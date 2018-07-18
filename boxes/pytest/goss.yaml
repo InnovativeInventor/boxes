@@ -1,0 +1,22 @@
+
+command:
+  pytest:
+    # required attributes
+    exit-status: 5
+    # optional attributes
+    stdout:
+    - "test session starts"
+    - "no tests ran in 0.00 seconds"
+    stderr: []
+    timeout: 10000 # in milliseconds
+
+
+command:
+  pytest -h:
+    # required attributes
+    exit-status: 0
+    # optional attributes
+    stdout:
+    - "usage: pytest"
+    stderr: []
+    timeout: 10000 # in milliseconds

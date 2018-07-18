@@ -13,33 +13,44 @@ package:
     - 2.7.4-1
 
 command:
-  curl -h:
+  pytest:
     # required attributes
-    exit-status: 0
+    exit-status: 5
     # optional attributes
     stdout:
-    - "Usage: curl"
+    - "test session starts"
+    - "no tests ran in 0.00 seconds"
     stderr: []
     timeout: 10000 # in milliseconds
 
 
 command:
-  git:
+  pytest -h:
     # required attributes
     exit-status: 0
     # optional attributes
     stdout:
-    - "usage: git "
+    - "usage: pytest"
     stderr: []
     timeout: 10000 # in milliseconds
 
 command:
-  nano -h:
+  flask:
     # required attributes
     exit-status: 0
     # optional attributes
     stdout:
-    - "Usage: nano"
+    - "Usage: flask [OPTIONS] COMMAND [ARGS]..."
+    stderr: []
+    timeout: 10000 # in milliseconds
+
+command:
+  pyenv -h:
+    # required attributes
+    exit-status: 0
+    # optional attributes
+    stdout:
+    - "Usage: pyenv"
     stderr: []
     timeout: 10000 # in milliseconds
 
