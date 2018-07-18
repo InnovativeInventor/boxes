@@ -10,6 +10,9 @@ RUN apt-get update && apt-get install -y \
     python3 \
     && rm -rf /var/lib/apt/lists/*
 RUN apt-get update && apt-get install -y \
+    python3-pip \
+    && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y \
     nano \
     && rm -rf /var/lib/apt/lists/*
 RUN apt-get update && apt-get install -y \
@@ -18,7 +21,7 @@ RUN apt-get update && apt-get install -y \
 RUN apt-get update && apt-get install -y \
     curl \
     && rm -rf /var/lib/apt/lists/*
-RUN pip3 install -U pytest
+RUN pip3 install pytest
 RUN apt-get update && apt-get install -y \
     python3 \
     && rm -rf /var/lib/apt/lists/*

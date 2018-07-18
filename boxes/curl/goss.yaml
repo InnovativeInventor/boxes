@@ -3,3 +3,13 @@ package:
     installed: true
     versions:
     - 7.52.1-5+deb9u6
+
+command:
+  curl -h:
+    # required attributes
+    exit-status: 0
+    # optional attributes
+    stdout:
+    - "Usage: curl"
+    stderr: []
+    timeout: 10000 # in milliseconds

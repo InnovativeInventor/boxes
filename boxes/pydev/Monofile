@@ -1,4 +1,4 @@
-MONOBOX python
+MONOBOX pip
 MONOBOX basicdev
 MONOBOX pytest
 MONOBOX flask

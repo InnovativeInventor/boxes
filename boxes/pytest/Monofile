@@ -1,1 +1,2 @@
+MONOBOX pip
 RUN pip3 install pytest
