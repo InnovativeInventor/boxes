@@ -1,0 +1,20 @@
+command:
+  zip:
+    # required attributes
+    exit-status: 0
+    # optional attributes
+    stdout:
+    - "zip [-options] [-b path] [-t mmddyyyy] [-n suffixes] [zipfile list] [-xi list]"
+    stderr: []
+    timeout: 10000 # in milliseconds
+
+
+command:
+  unzip:
+    # required attributes
+    exit-status: 0
+    # optional attributes
+    stdout:
+    - "Usage: unzip"
+    stderr: []
+    timeout: 10000 # in milliseconds

@@ -1,0 +1,6 @@
+{
+  "name": "zip",
+  "author": "InnovativeInventor",
+  "description": "Installs zip utilities",
+  "includes": ["zip, unzip"]
+}
