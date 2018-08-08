@@ -1,2 +1,3 @@
 **/**/.monobox
 **/**/Dockerfile
+!tests/Dockerfile
