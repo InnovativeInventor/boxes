@@ -1,13 +1,10 @@
 language: python
-
-python:
+python: 
   - "3.6"
-  - "3.7"
+  - "3.7-dev"
 
-sudo: required
-
-services: docker
-
-before_install: pip3 install monobox
+before_install: 
+  - pip3 install monobox
+  - curl -fsSL https://goss.rocks/install | sudo sh
 
 script: bash tests/test.sh
