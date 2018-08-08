@@ -1,3 +1,8 @@
+file:
+  /root/.pyenv/bin:
+    filetype: directory
+    exists: true  
+
 command:
   pyenv -h:
     # required attributes

@@ -4,3 +4,4 @@ RUN curl -L https://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-instal
 RUN echo 'export PATH="/root/.pyenv/bin:$PATH"' >> /etc/bash.bashrc
 RUN echo 'eval "$(pyenv init -)"' >> /etc/bash.bashrc
 RUN echo 'eval "$(pyenv virtualenv-init -)"' >> /etc/bash.bashrc
+ENV PATH="/root/.pyenv/bin:$PATH"

@@ -44,13 +44,8 @@ command:
     stderr: []
     timeout: 10000 # in milliseconds
 
-command:
-  pyenv -h:
-    # required attributes
-    exit-status: 0
-    # optional attributes
-    stdout:
-    - "Usage: pyenv"
-    stderr: []
-    timeout: 10000 # in milliseconds
+file:
+  /root/.pyenv/bin:
+    filetype: directory
+    exists: true  
 
