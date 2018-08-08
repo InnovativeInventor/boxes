@@ -1,0 +1,6 @@
+{
+  "name": "goss",
+  "author": "InnovativeInventor",
+  "description": "Installs goss",
+  "includes": ["goss"]
+}

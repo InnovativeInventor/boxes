@@ -1,0 +1,9 @@
+command:
+  goss:
+    # required attributes
+    exit-status: 0
+    # optional attributes
+    stdout:
+    - "goss - Quick and Easy server validation"
+    stderr: []
+    timeout: 10000 # in milliseconds
