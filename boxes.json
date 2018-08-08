@@ -34,6 +34,14 @@
     ]
   },
   {
+    "name": "goss",
+    "author": "InnovativeInventor",
+    "description": "Installs goss",
+    "includes": [
+      "goss"
+    ]
+  },
+  {
     "name": "grip",
     "author": "InnovativeInventor",
     "description": "Installs grip",
@@ -75,7 +83,7 @@
     "description": "Installs pyenv",
     "includes": [
       "curl",
-      "pyev"
+      "pyenv"
     ]
   },
   {
@@ -92,6 +100,14 @@
     "description": "Installs python3",
     "includes": [
       "python3"
+    ]
+  },
+  {
+    "name": "zip",
+    "author": "InnovativeInventor",
+    "description": "Installs zip utilities",
+    "includes": [
+      "zip, unzip"
     ]
   }
 ]
