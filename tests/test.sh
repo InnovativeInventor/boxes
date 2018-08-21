@@ -9,7 +9,7 @@ for test_env in tests/*/* ; do
         tag=$(echo $d | tr -cd '[:alnum:]') 
         echo $tag
         dgoss run --rm -d -it $tag || ((i++))
-        rm Dockerfile
+        # rm Dockerfile
         cd ..
     done
 done
