@@ -1,0 +1,6 @@
+FROM fedora:27
+
+LABEL maintainer="InnovativeInventor"
+
+ENTRYPOINT [ "bash" ]
+
