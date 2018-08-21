@@ -12,6 +12,7 @@ for test_env in tests/*/* ; do
         # rm Dockerfile
         cd ..
     done
+    cd ..
 done
 echo "$i"
 exit $i
