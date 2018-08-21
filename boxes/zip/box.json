@@ -2,5 +2,6 @@
   "name": "zip",
   "author": "InnovativeInventor",
   "description": "Installs zip utilities",
-  "includes": ["zip, unzip"]
+  "includes": ["zip, unzip"],
+  "tested": ["Debian", "Ubuntu"]
 }

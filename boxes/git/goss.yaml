@@ -1,9 +1,3 @@
-package:
-  git:
-    installed: true
-    versions:
-    - 1:2.11.0-3+deb9u3
-
 command:
   git:
     # required attributes

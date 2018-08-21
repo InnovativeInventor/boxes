@@ -2,5 +2,6 @@
   "name": "python",
   "author": "InnovativeInventor",
   "description": "Installs python3",
-  "includes": ["python3"]
+  "includes": ["python3"],
+  "tested": ["Debian", "Ubuntu"]
 }

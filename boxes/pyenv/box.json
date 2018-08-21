@@ -2,5 +2,6 @@
   "name": "pyenv",
   "author": "InnovativeInventor",
   "description": "Installs pyenv",
-  "includes": ["curl", "pyenv"]
+  "includes": ["curl", "pyenv"],
+  "tested": ["Debian", "Ubuntu"]
 }

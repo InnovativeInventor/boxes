@@ -1,0 +1,6 @@
+FROM ubuntu:xenial
+
+LABEL maintainer="InnovativeInventor"
+
+ENTRYPOINT [ "bash" ]
+

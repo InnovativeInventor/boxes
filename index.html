@@ -90,15 +90,25 @@ input[type=text] {
   color: #858585; !important
   font-size: medium; !important
 }
+
 .vertical {
        border-left: thick solid #000000;
        border-left-width:5px;
        height:auto;
 }
+.build-img {
+    position: absolute;
+    top: 1%;
+    right: 1%;
+}
 </style>
 
 </head>
-
+<div id="build-status">
+  <a href="https://travis-ci.com/InnovativeInventor/boxes">
+    <img src="https://travis-ci.com/InnovativeInventor/boxes.svg?branch=master" class="build-img"/>
+  </a>
+</div>
 <body class="background" onload="initialLoad()">
   <input type="text" name="search" id="search-bar" placeholder="Search..">
   <div class="result_lists">
@@ -136,7 +146,9 @@ function loadBoxes(data) {
       <div class='result'>
           <div class='name'>
             <span>
-              <h1>${box.name}</h1>
+              <a href="https://github.com/InnovativeInventor/boxes/tree/master/boxes/${box.name}">
+                <h1>${box.name}</h1>
+              </a>
               <h5>Author: ${box.author}</h5>
             </span>
           </div>
