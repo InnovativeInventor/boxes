@@ -12,9 +12,8 @@ for env in tests/$test_env/* ; do
     echo $tag
     dgoss run --rm -d -it $tag || ((i++))
     # rm Dockerfile
-    cd ..
+    cd .. && cd ..
     done
-    cd ..
 done
 echo "$i"
 exit $i
