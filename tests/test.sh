@@ -11,9 +11,8 @@ for env in tests/$test_env/* ; do
     tag=$(echo $d | tr -cd '[:alnum:]' | sed -r 's/^boxes//') 
     echo $tag
     dgoss run --rm -d -it $tag || ((i++))
-    # rm Dockerfile
+    rm Dockerfile
     cd .. && cd ..
-    done
 done
 echo "$i"
 exit $i
