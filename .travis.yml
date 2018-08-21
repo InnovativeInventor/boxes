@@ -11,7 +11,7 @@ before_install:
 - sudo apt-get install jq
 - curl -fsSL https://goss.rocks/install | sudo sh
 
-script: bash tests/test.sh
+script: python3 tests/test.py
 
 deploy:
   secret_access_key:
