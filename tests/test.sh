@@ -1,16 +1,18 @@
 i=0
-for test_env in tests/*/* ; do
-    echo "Using Dockerfile: $test_env"
-    for d in boxes/*/ ; do (cp $test_env $d/Dockerfile && cd $d); done
-    cd boxes 
-    for d in ./*/ ; do 
-        cd $d
-        monobox build || ((i++)) 
-        tag=$(echo $d | tr -cd '[:alnum:]') 
-        echo $tag
-        dgoss run --rm -d -it $tag || ((i++))
-        # rm Dockerfile
-        cd ..
+test_env=$1 # Location of test Dockerfile
+d=$2 # Location of box to test
+
+echo "Using Dockerfile folder: $test_env"
+for env in tests/$test_env/* ; do
+    echo "Using Dockerfile $env"
+    for d in boxes/*/ ; do (cp $env $d/Dockerfile && cd $d); done
+    cd $d
+    monobox build || ((i++)) 
+    tag=$(echo $d | tr -cd '[:alnum:]') 
+    echo $tag
+    dgoss run --rm -d -it $tag || ((i++))
+    # rm Dockerfile
+    cd ..
     done
     cd ..
 done
