@@ -1,5 +1,6 @@
 i=0
 for test_env in tests/*/* ; do
+    echo "Using Dockerfile: $test_env"
     for d in boxes/*/ ; do (cp $test_env $d/Dockerfile && cd $d); done
     cd boxes 
     for d in ./*/ ; do 
