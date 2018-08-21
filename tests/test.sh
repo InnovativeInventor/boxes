@@ -5,7 +5,7 @@ d=$2 # Location of box to test
 echo "Using Dockerfile folder: $test_env"
 for env in tests/$test_env/* ; do
     echo "Using Dockerfile $env"
-    for d in boxes/*/ ; do (cp $env $d/Dockerfile && cd $d); done
+    for d in boxes/** ; do (cp $env $d/Dockerfile && cd $d); done
     cd $d
     monobox build || ((i++)) 
     tag=$(echo $d | tr -cd '[:alnum:]') 
