@@ -1,9 +1,3 @@
-package:
-  curl:
-    installed: true
-    versions:
-    - 7.52.1-5+deb9u6
-
 command:
   curl -h:
     # required attributes
