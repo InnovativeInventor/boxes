@@ -8,7 +8,7 @@ for env in tests/$test_env/* ; do
     for d in boxes/** ; do (cp $env $d/Dockerfile && cd $d); done
     cd $d
     monobox build || ((i++)) 
-    tag=$(echo $d | tr -cd '[:alnum:] | sed -r "s/^boxes//"') 
+    tag=$(echo $d | tr -cd '[:alnum:]' | sed -r 's/^boxes//') 
     echo $tag
     dgoss run --rm -d -it $tag || ((i++))
     # rm Dockerfile
