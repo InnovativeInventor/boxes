@@ -2,5 +2,6 @@
   "name": "nano",
   "author": "InnovativeInventor",
   "description": "Installs nano",
-  "includes": ["nano"]
+  "includes": ["nano"],
+  "tested": ["Debian", "Ubuntu"]
 }

@@ -2,5 +2,6 @@
   "name": "grip",
   "author": "InnovativeInventor",
   "description": "Installs grip",
-  "includes": ["grip"]
+  "includes": ["grip"],
+  "tested": ["Debian", "Ubuntu"]
 }

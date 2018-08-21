@@ -1,0 +1,6 @@
+FROM ubuntu:cosmic
+
+LABEL maintainer="InnovativeInventor"
+
+ENTRYPOINT [ "bash" ]
+

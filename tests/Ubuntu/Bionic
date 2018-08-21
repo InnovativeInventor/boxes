@@ -1,0 +1,6 @@
+FROM ubuntu:bionic
+
+LABEL maintainer="InnovativeInventor"
+
+ENTRYPOINT [ "bash" ]
+

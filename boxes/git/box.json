@@ -2,5 +2,6 @@
   "name": "git",
   "author": "InnovativeInventor",
   "description": "Installs git",
-  "includes": ["git"]
+  "includes": ["git"],
+  "tested": ["Debian", "Ubuntu"]
 }

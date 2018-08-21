@@ -2,5 +2,6 @@
   "name": "goss",
   "author": "InnovativeInventor",
   "description": "Installs goss",
-  "includes": ["goss"]
+  "includes": ["goss"],
+  "tested": ["Debian", "Ubuntu"]
 }
