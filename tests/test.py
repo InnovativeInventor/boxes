@@ -16,7 +16,7 @@ for box in box_folders:
         envs_list = json_read['tested']
         for envs in envs_list:
             print("bash", "test.sh", envs, box)
-            proc = subprocess.Popen(["bash", "tests/test.sh", envs, box], stdout=sub.PIPE, stderr=sub.PIPE)
+            proc = subprocess.Popen(["bash", "tests/test.sh", envs, box], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
             out, err = proc.communicate()
             exit_code = proc.wait()
             print(out)
