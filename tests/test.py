@@ -6,7 +6,7 @@ box_folders = glob.glob('boxes/**/')
 print("Boxes detected:")
 print(box_folders)
 
-test_envs = glob.glob('**/*', recursive=True)
+test_envs = glob.glob('tests/**/*', recursive=True)
 print("Test envs detected:")
 print(test_envs)
 
@@ -16,4 +16,8 @@ for box in box_folders:
         envs_list = json_read['tested']
         for envs in envs_list:
             print("bash", "test.sh", envs, box)
-            subprocess.run(["bash", "tests/test.sh", envs, box])
+            proc = subprocess.Popen(["bash", "tests/test.sh", envs, box], stdout=sub.PIPE, stderr=sub.PIPE)
+            out, err = proc.communicate()
+            exit_code = proc.wait()
+            print(out)
+            print(exit_code)
