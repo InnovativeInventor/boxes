@@ -31,7 +31,7 @@ for box in box_folders:
                 print(out.decode('utf-8'))
                 print("Error code: " + str(exit_code),"\n")
             else:
-                print(Fore.GREEN + "Box: " + box + "     Env: " + envs)
+                print(Fore.GREEN + "Box: " + box.ljust(17) + "     Env: " + envs)
                 print(Fore.GREEN + "TEST PASSED","\n")
 
 
