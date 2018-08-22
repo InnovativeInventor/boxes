@@ -12,7 +12,7 @@ box_folders = glob.glob('boxes/**/')
 print("Boxes detected:")
 print(' '.join(str(i) for i in box_folders),"\n")
 
-test_envs = glob.glob('tests/**/*', recursive=True)
+test_envs = glob.glob('tests/**/*')
 print("Test envs detected:")
 print(' '.join(str(i) for i in test_envs),"\n")
 
