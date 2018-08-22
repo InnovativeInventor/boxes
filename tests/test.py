@@ -10,11 +10,11 @@ colorama.init()
 
 box_folders = glob.glob('boxes/**/')
 print("Boxes detected:")
-print(' '.join(str(i) for i in box_folders))
+print(' '.join(str(i) for i in box_folders),"\n")
 
 test_envs = glob.glob('tests/**/*', recursive=True)
 print("Test envs detected:")
-print(' '.join(str(i) for i in test_envs))
+print(' '.join(str(i) for i in test_envs),"\n")
 
 ALL_TESTS_PASSED = True
 for box in box_folders:
@@ -29,12 +29,13 @@ for box in box_folders:
                 ALL_TESTS_PASSED = False
                 print("bash", "test.sh", envs, box)
                 print(out.decode('utf-8'))
-                print("Error code: " + str(exit_code))
+                print("Error code: " + str(exit_code),"\n")
             else:
                 print(Fore.GREEN + "Box: " + box + "     Env: " + envs)
-                print(Fore.GREEN + "TEST PASSED\n\n")
+                print(Fore.GREEN + "TEST PASSED","\n")
 
 
+print()
 if ALL_TESTS_PASSED:
     print(Fore.GREEN + "ALL TESTS PASSED!" + Style.RESET_ALL)
 else:
