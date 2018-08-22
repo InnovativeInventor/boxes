@@ -1,5 +1,0 @@
-FROM ubuntu:latest
-
-LABEL maintainer="InnovativeInventor"
-
-ENTRYPOINT [ "bash" ]
