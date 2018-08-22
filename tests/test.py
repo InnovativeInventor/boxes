@@ -20,4 +20,4 @@ for box in box_folders:
             out, err = proc.communicate()
             exit_code = proc.wait()
             print(out)
-            print(exit_code)
+            print("Error code: " + exit_code)
