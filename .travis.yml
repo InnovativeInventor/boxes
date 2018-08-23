@@ -1,21 +1,17 @@
 language: python
 sudo: required
-
 python:
 - '3.6'
 - 3.7-dev
-
 before_install:
 - pip3 install monobox colorama
 - sudo apt-get update
 - sudo apt-get install jq
 - curl -fsSL https://goss.rocks/install | sudo sh
-
 script: python3 tests/test.py
-
 deploy:
   secret_access_key:
-    secure: UVMxhmkzFvNADWS8A7JcC0dMcnGL29UZnyGeVLFOMTu3gLmflXbId99q28hpgFcQC/pOP82Pm+CzRJpCN6wp1792+eck0BC93LeVbI6bmaAA47PfnlTGp8UjVk7M86ezaxpt+an0wA1d+RzBT4qLtC9JEDAzjMTKtA1CQxIEmU8+iFdUb38wdMrih9yF/DU8kQM5Mm7LAPxh3hyS6l6oHlevOwVIKuFgZLO8X3TYnGE9KHJJDXuiSknzEbrV79qpCX6V55ac97vAzKOCT7gBB6cvNF3gFb2THRIAEUImMddbECRKLL1ZSLpBDSjyacJiaLs7qhXeq/3k5d2LcNDnvpE3CQElPRmZzwl2kkGYASPE1ASwFUzWJ9eip/fGtKFbfRyRbbc2Ys0mWBT60ib82NACIrsTldTmINoSTH9aIo/7Iz6PYBM6De/tEfQptreNHXmyjBXGSc1jTSqONKrT2gDx0fG8ANQUm9LRxnP8HLAaI0vxJeCn0aFmz2/UCQRWk4ot80O51W/GFQIHveVFluQM6G9p60PglHZ/D5a5zsDR63Nve0Z1rj4EuCnuxha6ZB9HW5v1MT7AMmQzABN/DnRdHNSlDnJUhGAg91cjRKcM6F8iw9dRRFXoR3qsOYDMZYP0rNEEM47HIBVBIZjfz/BBl3JIdS+m6zcQ0anizcU=
-  access_key_id: AKIAIJLINOFQSG5CP5PQ
+    secure: ZTkTYlCf5kBM7SK/MFuKEZeKy6kzeTNTLCqa4AjJnFKYviOwDLhTosSwBnqTWTlcUPHnO/R3V11JpA3sTpOaffUsFPT/bbYuE0rEpQxGR4SSCFK5cCnH27dmzF3ZDgkDD0pRJKNWYq6d/n5ZokOj7Zey8X34SfTZqRgYm+tmSISZVLsBodCiAl8Zrc1IwRrumcG+OEtUYhKWe7mNIj/0z0ZRbHbyBRGMg+XJDXreIsa6t7kckCsUaQpbKkskaxm+7wFbYF0zF70U2KQCqzsMW+z4bwp7kHoUAYSSD2g9VpXf1KgFu2L1Bxp6ALxGAvtAFSNyZvew7QpqzC8eTQ1W4C6rQ8e0k6c/kfyc9vi60+I1B05Fml9NOAvuU9QspVhXnjTk3GjcxBoH72rv3gD3iNVlXIA3qIEl/Oqm6m58kY0Lvob06Kj/eTXyPBdmX30W2WKA7/4LJSGny6EXY+46PUeOTVqF1sp67WlSW+fqX9Am/g1TTBQZfoUtbxGU6EXSUddDhVkKSpmIoGChVh90KgjdkEFT47Yi0jDGq6saonT78DVMwPW/QWD/B9Nv5OahAnkUCD/g4KpX4oNxl+WOAoHvQ+vmP3uZaf/GlBItakYZqjHigAmF4MH2uEDiQkhiqASrJYPKgNOT1wKCCxXkw+IAASjLYh2KwDGvGNf1t4c=
+  access_key_id: AKIAIYESPDMKWTA2CT7A
   provider: s3
   bucket: boxes.homelabs.space
