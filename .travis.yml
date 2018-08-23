@@ -19,5 +19,4 @@ deploy:
   access_key_id:
     secure: Z+IFPrYmaGPo37U6rsutFiACj9UTTEqtaoHN/+pJ0gJAcXzIKgX42SYOkFndNB3+tidcIKx0UD+mCQmYzZChS/e4SRwI23k6jZdWV0zkTZt0JEgtpUYfEAvpu8gG69UMYP+MLtMMAfI+GkUaCdZUUEZIo3m56n3aZevJP4Jlf1DRWaqist0dtTqn8iObdSTaEHoDzvLnefk4wwBP5IzmOKTzNpYB/avqEkefjfbWD3/Sh49/i2uHhY9YxNYRucQ2rMKeLi0I8lK/2m5V5CTI6qfUHuu8dwWODTbELEdxBb4BicG2RzSt7ylqkaCxqiRJkF3ZhPmedJ//pfcctdreke0d6hkb0AKA/LAJJhadrzoUxy1PBSMFHPBzEurfaP82SRaE9QRIKfBFTKkIOdO4AkQCVEvXyFsUMYRSyZUtcgaYs/Ne4xII+7sEb2X7FCywb85FlNgyW3p45xORRUIZayoog29E+QkJdEfA03x0nJGPLCroByAZkqvrbOAhri+D11HvBcNtiNkYixcmR6jzPAjiunue0svIz/DD1+2m2K/pfa44rF1PvuiB97kHyrMw42A8ipEJVwp9itfp3usMa87BtR1bo2+/q/UpPKdRVY5PiVVlwzC8MXXTpObYcJ4TeFefDr9vzv0hqdGZ54PcUtG/UTZmQZuBlt5VS+Xo2xk=
   provider: s3
-  bucket:
-    secure: boxes.homelabs.space
+  bucket: boxes.homelabs.space
