@@ -15,3 +15,4 @@ deploy:
   access_key_id: AKIAJVNE32OKSJJHXY6Q
   provider: s3
   bucket: boxes.homelabs.space
+  region: "us-east-1"
