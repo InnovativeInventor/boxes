@@ -9,10 +9,10 @@ before_install:
 - sudo apt-get install jq
 - curl -fsSL https://goss.rocks/install | sudo sh
 script: python3 tests/test.py
-deploy:
-  secret_access_key:
-    secure: KyU5LB12CT8/OxIyoaipNo4Sf+HjVaTaVhU+k6Dfxh55tfBsYi37gGK2P5vTVcjJS7db3yW4t0lPou3A0o3jNdtzR+yWHZ8OQ0YckjZme0218gZG+4TXSk57EAjiZB2MaDXyitkuP6QyPV+KQnRCT+Vsvr0ehz5AVObfusbTvqTmcl7V9QHGAGyDxqb4Ahbo39zPzkncCbUG7qDT/4pBGR+f5BCEXyGKX3lylXueylUCoCwMjUDCv2XAGOn0itYcFDMVf8+J8a2ITRB/YnZ7DePR4pLZQR2qotxMdhx9bq0OWcHfpaOp10Ecw7rQw87hKmmapw2nSyFs6L4Hyv3sl9Ac/AcbncDMSSWwzHMwlvqEUnZ3Dq6EQxPzfLUP8PAYZxa379niwIck/W4CaYHzMYJ30zxLILKeh4lD1/zczgI1xBOC17F9QO1C/NnKFmTcZpFUtOOKmBIGAaB0aoOBGocbLNw2CFzb1HkVvXxNrOlhC4s4uvx4/8ZhXc/tduVFq8hWWhJVbllBoHksHWVFGZ0aFhuzjgMzYnPEA4vh7e4PojBmBRcyQUENIeDuAwq/VyNXPYtk0X7618flr3cmzdrulfToGE54R1Ph54LKD4VfVce0RAPmvc6hGJ6za6LnjIgFJi1KYUC1UVx5uz3sFBxlTGC5BU7GOiWEv9HsUjs=
-  access_key_id: AKIAJVNE32OKSJJHXY6Q
-  provider: s3
-  bucket: boxes.homelabs.space
-  region: "us-east-1"
+# deploy:
+#   secret_access_key:
+#     secure: KyU5LB12CT8/OxIyoaipNo4Sf+HjVaTaVhU+k6Dfxh55tfBsYi37gGK2P5vTVcjJS7db3yW4t0lPou3A0o3jNdtzR+yWHZ8OQ0YckjZme0218gZG+4TXSk57EAjiZB2MaDXyitkuP6QyPV+KQnRCT+Vsvr0ehz5AVObfusbTvqTmcl7V9QHGAGyDxqb4Ahbo39zPzkncCbUG7qDT/4pBGR+f5BCEXyGKX3lylXueylUCoCwMjUDCv2XAGOn0itYcFDMVf8+J8a2ITRB/YnZ7DePR4pLZQR2qotxMdhx9bq0OWcHfpaOp10Ecw7rQw87hKmmapw2nSyFs6L4Hyv3sl9Ac/AcbncDMSSWwzHMwlvqEUnZ3Dq6EQxPzfLUP8PAYZxa379niwIck/W4CaYHzMYJ30zxLILKeh4lD1/zczgI1xBOC17F9QO1C/NnKFmTcZpFUtOOKmBIGAaB0aoOBGocbLNw2CFzb1HkVvXxNrOlhC4s4uvx4/8ZhXc/tduVFq8hWWhJVbllBoHksHWVFGZ0aFhuzjgMzYnPEA4vh7e4PojBmBRcyQUENIeDuAwq/VyNXPYtk0X7618flr3cmzdrulfToGE54R1Ph54LKD4VfVce0RAPmvc6hGJ6za6LnjIgFJi1KYUC1UVx5uz3sFBxlTGC5BU7GOiWEv9HsUjs=
+#   access_key_id: AKIAJVNE32OKSJJHXY6Q
+#   provider: s3
+#   bucket: boxes.homelabs.space
+#   region: "us-east-1"
