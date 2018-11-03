@@ -29,5 +29,9 @@
 echo "Running combine.sh"
 bash combine.sh
 
+echo "Compressing"
+zopfli index.html -i1000
+zopfli boxes.json -i1000
+
 echo "Uploading to s3"
 aws s3 sync . s3://boxes.homelabs.space --exclude "*.git*" --exclude "Gem*" --exclude "*.gemspec" --exclude "deploy" --exclude "*.sh" --exclude "*.md" --exclude "LICENSE"

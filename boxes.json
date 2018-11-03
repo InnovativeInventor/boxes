@@ -7,6 +7,10 @@
       "nano",
       "git",
       "curl"
+    ],
+    "tested": [
+      "Debian",
+      "Ubuntu"
     ]
   },
   {
@@ -15,6 +19,26 @@
     "description": "Installs curl",
     "includes": [
       "curl"
+    ],
+    "tested": [
+      "Debian",
+      "Ubuntu"
+    ]
+  },
+  {
+    "name": "basicdev",
+    "author": "InnovativeInventor",
+    "description": "Default docker image for Monobox",
+    "includes": [
+      "nano",
+      "git",
+      "curl",
+      "python3",
+      "pip3"
+    ],
+    "tested": [
+      "Debian",
+      "Ubuntu"
     ]
   },
   {
@@ -23,6 +47,10 @@
     "description": "Installs flask",
     "includes": [
       "flask"
+    ],
+    "tested": [
+      "Debian",
+      "Ubuntu"
     ]
   },
   {
@@ -31,6 +59,10 @@
     "description": "Installs git",
     "includes": [
       "git"
+    ],
+    "tested": [
+      "Debian",
+      "Ubuntu"
     ]
   },
   {
@@ -39,6 +71,10 @@
     "description": "Installs goss",
     "includes": [
       "goss"
+    ],
+    "tested": [
+      "Debian",
+      "Ubuntu"
     ]
   },
   {
@@ -47,6 +83,10 @@
     "description": "Installs grip",
     "includes": [
       "grip"
+    ],
+    "tested": [
+      "Debian",
+      "Ubuntu"
     ]
   },
   {
@@ -55,6 +95,10 @@
     "description": "Installs nano",
     "includes": [
       "nano"
+    ],
+    "tested": [
+      "Debian",
+      "Ubuntu"
     ]
   },
   {
@@ -64,6 +108,10 @@
     "includes": [
       "pip",
       "python3"
+    ],
+    "tested": [
+      "Debian",
+      "Ubuntu"
     ]
   },
   {
@@ -75,6 +123,10 @@
       "pytest",
       "flask",
       "pyenv"
+    ],
+    "tested": [
+      "Debian",
+      "Ubuntu"
     ]
   },
   {
@@ -84,6 +136,10 @@
     "includes": [
       "curl",
       "pyenv"
+    ],
+    "tested": [
+      "Debian",
+      "Ubuntu"
     ]
   },
   {
@@ -92,6 +148,10 @@
     "description": "Installs pytest",
     "includes": [
       "pytest"
+    ],
+    "tested": [
+      "Debian",
+      "Ubuntu"
     ]
   },
   {
@@ -100,6 +160,10 @@
     "description": "Installs python3",
     "includes": [
       "python3"
+    ],
+    "tested": [
+      "Debian",
+      "Ubuntu"
     ]
   },
   {
@@ -108,6 +172,10 @@
     "description": "Installs zip utilities",
     "includes": [
       "zip, unzip"
+    ],
+    "tested": [
+      "Debian",
+      "Ubuntu"
     ]
   }
 ]

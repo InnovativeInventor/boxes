@@ -1,0 +1,61 @@
+command:
+  curl -h:
+    # required attributes
+    exit-status: 0
+    # optional attributes
+    stdout:
+    - "Usage: curl"
+    stderr: []
+    timeout: 10000 # in milliseconds
+
+
+command:
+  git:
+    # required attributes
+    exit-status: 0
+    # optional attributes
+    stdout:
+    - "usage: git "
+    stderr: []
+    timeout: 10000 # in milliseconds
+
+command:
+  nano -h:
+    # required attributes
+    exit-status: 0
+    # optional attributes
+    stdout:
+    - "Usage: nano"
+    stderr: []
+    timeout: 10000 # in milliseconds
+
+command:
+  python3:
+    # required attributes
+    exit-status: 0
+    # optional attributes
+    stdout:
+    - "Type \"help\", \"copyright\", \"credits\" or \"license\" for more information."
+    stderr: []
+    timeout: 10000 # in milliseconds
+
+
+command:
+  python3 -h:
+    # required attributes
+    exit-status: 0
+    # optional attributes
+    stdout:
+    - "usage: python3"
+    stderr: []
+    timeout: 10000 # in milliseconds
+
+command:
+  pip3:
+    # required attributes
+    exit-status: 0
+    # optional attributes
+    stdout:
+    - "pip <command> [options]"
+    stderr: []
+    timeout: 10000 # in milliseconds

@@ -1,0 +1,7 @@
+{
+  "name": "basicdev",
+  "author": "InnovativeInventor",
+  "description": "Default docker image for Monobox",
+  "includes": ["nano", "git", "curl", "python3", "pip3"],
+  "tested": ["Debian", "Ubuntu"]
+}
