@@ -1,0 +1,7 @@
+{
+  "name": "ruby",
+  "author": "InnovativeInventor",
+  "description": "Installs ruby",
+  "includes": ["ruby"],
+  "tested": ["Debian", "Ubuntu"]
+}

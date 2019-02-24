@@ -1,0 +1,20 @@
+command:
+  python2.7:
+    # required attributes
+    exit-status: 0
+    # optional attributes
+    stdout:
+    - "Type \"help\", \"copyright\", \"credits\" or \"license\" for more information."
+    stderr: []
+    timeout: 10000 # in milliseconds
+
+
+command:
+  python2.7 -h:
+    # required attributes
+    exit-status: 0
+    # optional attributes
+    stdout:
+    - "python2.7"
+    stderr: []
+    timeout: 10000 # in milliseconds
