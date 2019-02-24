@@ -7,6 +7,7 @@ for env in tests/$test_env/* ; do
     echo "Using Dockerfile $env"
     cp $env $d/Dockerfile
     cd $d
+    ls
     monobox build || ((i++)) 
     tag=$(echo $d | tr -cd '[:alnum:]' | sed -r 's/^boxes//') 
     echo $tag
