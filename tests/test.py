@@ -39,6 +39,6 @@ print()
 if ALL_TESTS_PASSED:
     print(Fore.GREEN + "ALL TESTS PASSED!" + Style.RESET_ALL)
 else:
-    print(Fore.GREEN + "TESTS FAILED!" + Style.RESET_ALL)
+    print(Fore.RED + "TESTS FAILED!" + Style.RESET_ALL)
     sys.exit(1)
 

@@ -1,20 +1,20 @@
 command:
-  zip:
+  python3:
     # required attributes
     exit-status: 0
     # optional attributes
     stdout:
-    - "zip [-options] [-b path] [-t mmddyyyy] [-n suffixes] [zipfile list] [-xi list]"
+    - "Type \"help\", \"copyright\", \"credits\" or \"license\" for more information."
     stderr: []
     timeout: 10000 # in milliseconds
 
 
 command:
-  unzip:
+  python3 -h:
     # required attributes
-    exit-status: 127 
+    exit-status: 0
     # optional attributes
     stdout:
-    - "Usage: unzip"
+    - "usage: python3"
     stderr: []
     timeout: 10000 # in milliseconds

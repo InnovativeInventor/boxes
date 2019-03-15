@@ -1,0 +1,10 @@
+command:
+  gcc:
+    # required attributes
+    exit-status: 1
+    # optional attributes
+    stdout:
+    - "gcc: fatal error: no input files"
+    stderr: []
+    timeout: 10000 # in milliseconds
+

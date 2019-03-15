@@ -1,0 +1,7 @@
+{
+  "name": "gcc",
+  "author": "InnovativeInventor",
+  "description": "Installs gcc",
+  "includes": ["gcc"],
+  "tested": ["Debian", "Ubuntu"]
+}

@@ -1,0 +1,10 @@
+command:
+  xz:
+    # required attributes
+    exit-status: 1
+    # optional attributes
+    stdout:
+    - "xz: Compressed data cannot be written to a terminal"
+    stderr: []
+    timeout: 10000 # in milliseconds
+

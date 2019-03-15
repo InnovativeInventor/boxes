@@ -1,0 +1,10 @@
+command:
+  make:
+    # required attributes
+    exit-status: 2
+    # optional attributes
+    stdout:
+    - "make: *** No targets specified and no makefile found.  Stop."
+    stderr: []
+    timeout: 10000 # in milliseconds
+

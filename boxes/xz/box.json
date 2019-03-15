@@ -1,0 +1,7 @@
+{
+  "name": "xz",
+  "author": "InnovativeInventor",
+  "description": "Installs xz-utils",
+  "includes": ["xz"],
+  "tested": ["Debian", "Ubuntu"]
+}
