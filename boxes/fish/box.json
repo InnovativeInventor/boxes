@@ -1,0 +1,7 @@
+{
+  "name": "fish",
+  "author": "InnovativeInventor",
+  "description": "Installs fish shell",
+  "includes": ["fish"],
+  "tested": ["Debian", "Ubuntu"]
+}

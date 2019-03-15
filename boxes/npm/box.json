@@ -1,0 +1,7 @@
+{
+  "name": "npm",
+  "author": "InnovativeInventor",
+  "description": "Installs npm",
+  "includes": ["npm"],
+  "tested": ["Debian", "Ubuntu"]
+}

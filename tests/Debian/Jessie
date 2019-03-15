@@ -3,4 +3,3 @@ FROM debian:jessie
 LABEL maintainer="InnovativeInventor"
 
 ENTRYPOINT [ "bash" ]
-

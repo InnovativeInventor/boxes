@@ -12,7 +12,7 @@ command:
 command:
   unzip:
     # required attributes
-    exit-status: 127
+    exit-status: 0
     # optional attributes
     stdout:
     - "Usage: unzip"

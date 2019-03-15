@@ -1,3 +1,6 @@
 **/**/.monobox
 **/**/Dockerfile
 !tests/Dockerfile
+.DS_Store
+.idea/
+boxes/.DS_Store

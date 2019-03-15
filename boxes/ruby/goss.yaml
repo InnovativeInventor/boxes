@@ -1,14 +1,14 @@
 command:
   ruby -h:
     # required attributes
-    exit-status: 1
+    exit-status: 0
     # optional attributes
     stdout:
     - "Usage: ruby [switches] [--] [programfile] [arguments]"
     stderr: []
     timeout: 10000 # in milliseconds
   gem:
-    exit-status:0
+    exit-status: 1
     stdout:
     - "RubyGems is a sophisticated package manager for Ruby."
     timeout: 10000

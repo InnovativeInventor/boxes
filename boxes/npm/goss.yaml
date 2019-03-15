@@ -1,0 +1,9 @@
+command:
+  npm:
+    # required attributes
+    exit-status: 1
+    # optional attributes
+    stdout:
+    - "Usage: npm <command>"
+    stderr: []
+    timeout: 10000 # in milliseconds

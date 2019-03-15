@@ -3,4 +3,3 @@ FROM debian:latest
 LABEL maintainer="InnovativeInventor"
 
 ENTRYPOINT [ "bash" ]
-

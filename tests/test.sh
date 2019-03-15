@@ -1,6 +1,9 @@
 i=0
 test_env=$1 # Location of test Dockerfile
 d=$2 # Location of box to test
+if [ -f ~/.bashrc ]; then
+    source ~/.bashrc
+fi
 
 echo "Using Dockerfile folder: $test_env"
 for env in tests/$test_env/* ; do
