@@ -2,12 +2,18 @@ language: python
 sudo: required
 python:
 - '3.6'
-- 3.7-dev
+- '3.7-dev'
+services:
+- docker
 before_install:
-- pip3 install monobox colorama
+- curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+- sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
 - sudo apt-get update
-- sudo apt-get install jq
-- curl -fsSL https://goss.rocks/install | sudo sh
+- sudo apt-get -y -o Dpkg::Options::="--force-confnew" install docker-ce
+- "pip3 install monobox colorama"
+- "sudo apt-get update"
+- "sudo apt-get install jq"
+- "curl -fsSL https://goss.rocks/install | sudo sh"
 script: python3 tests/test.py
 # deploy:
 #   secret_access_key:
