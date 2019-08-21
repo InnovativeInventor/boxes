@@ -1,0 +1,7 @@
+{
+  "name": "git",
+  "author": "InnovativeInventor",
+  "description": "Installs sudo",
+  "includes": ["sudo"],
+  "tested": ["Debian", "Ubuntu"]
+}

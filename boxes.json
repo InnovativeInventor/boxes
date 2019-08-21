@@ -1,181 +1,163 @@
 [
-  {
-    "name": "basicdev",
-    "author": "InnovativeInventor",
-    "description": "Installs a basic developer's enviroment",
-    "includes": [
-      "nano",
-      "git",
-      "curl"
-    ],
-    "tested": [
-      "Debian",
-      "Ubuntu"
-    ]
-  },
-  {
-    "name": "curl",
-    "author": "InnovativeInventor",
-    "description": "Installs curl",
-    "includes": [
-      "curl"
-    ],
-    "tested": [
-      "Debian",
-      "Ubuntu"
-    ]
-  },
-  {
-    "name": "basicdev",
-    "author": "InnovativeInventor",
-    "description": "Default docker image for Monobox",
-    "includes": [
-      "nano",
-      "git",
-      "curl",
-      "python3",
-      "pip3"
-    ],
-    "tested": [
-      "Debian",
-      "Ubuntu"
-    ]
-  },
-  {
-    "name": "flask",
-    "author": "InnovativeInventor",
-    "description": "Installs flask",
-    "includes": [
-      "flask"
-    ],
-    "tested": [
-      "Debian",
-      "Ubuntu"
-    ]
-  },
-  {
-    "name": "git",
-    "author": "InnovativeInventor",
-    "description": "Installs git",
-    "includes": [
-      "git"
-    ],
-    "tested": [
-      "Debian",
-      "Ubuntu"
-    ]
-  },
-  {
-    "name": "goss",
-    "author": "InnovativeInventor",
-    "description": "Installs goss",
-    "includes": [
-      "goss"
-    ],
-    "tested": [
-      "Debian",
-      "Ubuntu"
-    ]
-  },
-  {
-    "name": "grip",
-    "author": "InnovativeInventor",
-    "description": "Installs grip",
-    "includes": [
-      "grip"
-    ],
-    "tested": [
-      "Debian",
-      "Ubuntu"
-    ]
-  },
-  {
-    "name": "nano",
-    "author": "InnovativeInventor",
-    "description": "Installs nano",
-    "includes": [
-      "nano"
-    ],
-    "tested": [
-      "Debian",
-      "Ubuntu"
-    ]
-  },
-  {
-    "name": "pip",
-    "author": "InnovativeInventor",
-    "description": "Installs pip",
-    "includes": [
-      "pip",
-      "python3"
-    ],
-    "tested": [
-      "Debian",
-      "Ubuntu"
-    ]
-  },
-  {
-    "name": "pydev",
-    "author": "InnovativeInventor",
-    "description": "Installs a standard python developer's enviroment",
-    "includes": [
-      "basicdev",
-      "pytest",
-      "flask",
-      "pyenv"
-    ],
-    "tested": [
-      "Debian",
-      "Ubuntu"
-    ]
-  },
-  {
-    "name": "pyenv",
-    "author": "InnovativeInventor",
-    "description": "Installs pyenv",
-    "includes": [
-      "curl",
-      "pyenv"
-    ],
-    "tested": [
-      "Debian",
-      "Ubuntu"
-    ]
-  },
-  {
-    "name": "pytest",
-    "author": "InnovativeInventor",
-    "description": "Installs pytest",
-    "includes": [
-      "pytest"
-    ],
-    "tested": [
-      "Debian",
-      "Ubuntu"
-    ]
-  },
-  {
-    "name": "python",
-    "author": "InnovativeInventor",
-    "description": "Installs python3",
-    "includes": [
-      "python3"
-    ],
-    "tested": [
-      "Debian",
-      "Ubuntu"
-    ]
-  },
-  {
-    "name": "zip",
-    "author": "InnovativeInventor",
-    "description": "Installs zip utilities",
-    "includes": [
-      "zip, unzip"
-    ],
-    "tested": [
-      "Debian",
-      "Ubuntu"
-    ]
-  }
+{
+  "name": "basicdev",
+  "author": "InnovativeInventor",
+  "description": "Installs a basic developer's enviroment",
+  "includes": ["nano", "git", "curl"],
+  "tested": ["Debian", "Ubuntu"]
+}
+,{
+  "name": "curl",
+  "author": "InnovativeInventor",
+  "description": "Installs curl",
+  "includes": ["curl"],
+  "tested": ["Debian", "Ubuntu"]
+}
+,{
+  "name": "basicdev",
+  "author": "InnovativeInventor",
+  "description": "Default docker image for Monobox",
+  "includes": ["nano", "git", "curl", "python3", "pip3"],
+  "tested": ["Debian", "Ubuntu"]
+}
+,{
+  "name": "fish",
+  "author": "InnovativeInventor",
+  "description": "Installs fish shell",
+  "includes": ["fish"],
+  "tested": ["Debian", "Ubuntu"]
+}
+,{
+  "name": "flask",
+  "author": "InnovativeInventor",
+  "description": "Installs flask",
+  "includes": ["flask"],
+  "tested": ["Debian", "Ubuntu"]
+}
+,{
+  "name": "gcc",
+  "author": "InnovativeInventor",
+  "description": "Installs gcc",
+  "includes": ["gcc"],
+  "tested": ["Debian", "Ubuntu"]
+}
+,{
+  "name": "git",
+  "author": "InnovativeInventor",
+  "description": "Installs git",
+  "includes": ["git"],
+  "tested": ["Debian", "Ubuntu"]
+}
+,{
+  "name": "goss",
+  "author": "InnovativeInventor",
+  "description": "Installs goss",
+  "includes": ["goss"],
+  "tested": ["Debian", "Ubuntu"]
+}
+,{
+  "name": "grip",
+  "author": "InnovativeInventor",
+  "description": "Installs grip",
+  "includes": ["grip"],
+  "tested": ["Debian", "Ubuntu"]
+}
+,{
+  "name": "gcc",
+  "author": "InnovativeInventor",
+  "description": "Installs gcc",
+  "includes": ["gcc"],
+  "tested": ["Debian", "Ubuntu"]
+}
+,{
+  "name": "nano",
+  "author": "InnovativeInventor",
+  "description": "Installs nano",
+  "includes": ["nano"],
+  "tested": ["Debian", "Ubuntu"]
+}
+,{
+  "name": "npm",
+  "author": "InnovativeInventor",
+  "description": "Installs npm",
+  "includes": ["npm"],
+  "tested": ["Debian", "Ubuntu"]
+}
+,{
+  "name": "pip",
+  "author": "InnovativeInventor",
+  "description": "Installs pip",
+  "includes": ["pip","python3"],
+  "tested": ["Debian", "Ubuntu"]
+}
+,{
+  "name": "pydev",
+  "author": "InnovativeInventor",
+  "description": "Installs a standard python developer's enviroment",
+  "includes": ["basicdev", "pytest", "flask", "pyenv"],
+  "tested": ["Debian", "Ubuntu"]
+}
+,{
+  "name": "pyenv",
+  "author": "InnovativeInventor",
+  "description": "Installs pyenv",
+  "includes": ["curl", "pyenv"],
+  "tested": ["Debian", "Ubuntu"]
+}
+,{
+  "name": "pytest",
+  "author": "InnovativeInventor",
+  "description": "Installs pytest",
+  "includes": ["pytest"],
+  "tested": ["Debian", "Ubuntu"]
+}
+,{
+  "name": "python2.7",
+  "author": "InnovativeInventor",
+  "description": "Installs python2.7",
+  "includes": ["python2.7"],
+  "tested": ["Debian", "Ubuntu"]
+}
+,{
+  "name": "python3",
+  "author": "InnovativeInventor",
+  "description": "Installs python3",
+  "includes": ["python3"],
+  "tested": ["Debian", "Ubuntu"]
+}
+,{
+  "name": "python3",
+  "author": "InnovativeInventor",
+  "description": "Installs python3",
+  "includes": ["python3"],
+  "tested": ["Debian", "Ubuntu"]
+}
+,{
+  "name": "ruby",
+  "author": "InnovativeInventor",
+  "description": "Installs ruby",
+  "includes": ["ruby"],
+  "tested": ["Debian", "Ubuntu"]
+}
+,{
+  "name": "git",
+  "author": "InnovativeInventor",
+  "description": "Installs sudo",
+  "includes": ["sudo"],
+  "tested": ["Debian", "Ubuntu"]
+}
+,{
+  "name": "xz",
+  "author": "InnovativeInventor",
+  "description": "Installs xz-utils",
+  "includes": ["xz"],
+  "tested": ["Debian", "Ubuntu"]
+}
+,{
+  "name": "zip",
+  "author": "InnovativeInventor",
+  "description": "Installs zip utilities",
+  "includes": ["zip, unzip"],
+  "tested": ["Debian", "Ubuntu"]
+}
 ]

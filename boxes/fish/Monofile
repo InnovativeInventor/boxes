@@ -2,6 +2,9 @@ RUN apt-get update && apt-get install -y \
     software-properties-common \
     && rm -rf /var/lib/apt/lists/*
 RUN apt-add-repository ppa:fish-shell/release-3
+RUN echo 'deb http://download.opensuse.org/repositories/shells:/fish:/release:/3/Debian_9.0/ /' > /etc/apt/sources.list.d/shells:fish:release:3.list
+apt-get update
+apt-get install fish
 # RUN apt-get update && apt-get install -y \
 #     fish \
 #     && rm -rf /var/lib/apt/lists/*

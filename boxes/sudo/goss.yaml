@@ -1,10 +1,10 @@
 command:
-  xz:
+  sudo echo:
     # required attributes
-    exit-status: 0
+    exit-status: 1
     # optional attributes
     stdout:
-    - "xz: Compressed data cannot be written to a terminal"
+    - "\n"
     stderr: []
     timeout: 10000 # in milliseconds
 
