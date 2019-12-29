@@ -7,6 +7,20 @@
   "tested": ["Debian", "Ubuntu"]
 }
 ,{
+  "name": "build",
+  "author": "InnovativeInventor",
+  "description": "Installs various essential build tools",
+  "includes": ["build-essential", "zlib1g"],
+  "tested": ["Debian", "Ubuntu"]
+}
+,{
+  "name": "Bundle",
+  "author": "InnovativeInventor",
+  "description": "Installs bundle and various needed things",
+  "includes": ["ruby", "bundle"],
+  "tested": ["Debian", "Ubuntu"]
+}
+,{
   "name": "curl",
   "author": "InnovativeInventor",
   "description": "Installs curl",
@@ -63,10 +77,10 @@
   "tested": ["Debian", "Ubuntu"]
 }
 ,{
-  "name": "gcc",
+  "name": "make",
   "author": "InnovativeInventor",
-  "description": "Installs gcc",
-  "includes": ["gcc"],
+  "description": "Installs make",
+  "includes": ["make"],
   "tested": ["Debian", "Ubuntu"]
 }
 ,{
@@ -147,6 +161,13 @@
   "tested": ["Debian", "Ubuntu"]
 }
 ,{
+  "name": "v8",
+  "author": "InnovativeInventor",
+  "description": "Installs google's v8",
+  "includes": ["libv8"],
+  "tested": ["Debian", "Ubuntu"]
+}
+,{
   "name": "xz",
   "author": "InnovativeInventor",
   "description": "Installs xz-utils",
@@ -160,4 +181,4 @@
   "includes": ["zip, unzip"],
   "tested": ["Debian", "Ubuntu"]
 }
-]
+,]

@@ -1,0 +1,7 @@
+{
+  "name": "Bundle",
+  "author": "InnovativeInventor",
+  "description": "Installs bundle and various needed things",
+  "includes": ["ruby", "bundle"],
+  "tested": ["Debian", "Ubuntu"]
+}

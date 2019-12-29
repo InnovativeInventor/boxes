@@ -1,0 +1,7 @@
+{
+  "name": "build",
+  "author": "InnovativeInventor",
+  "description": "Installs various essential build tools",
+  "includes": ["build-essential", "zlib1g"],
+  "tested": ["Debian", "Ubuntu"]
+}

@@ -1,0 +1,7 @@
+{
+  "name": "v8",
+  "author": "InnovativeInventor",
+  "description": "Installs google's v8",
+  "includes": ["libv8"],
+  "tested": ["Debian", "Ubuntu"]
+}

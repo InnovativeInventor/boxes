@@ -1,7 +1,7 @@
 {
-  "name": "gcc",
+  "name": "make",
   "author": "InnovativeInventor",
-  "description": "Installs gcc",
-  "includes": ["gcc"],
+  "description": "Installs make",
+  "includes": ["make"],
   "tested": ["Debian", "Ubuntu"]
 }

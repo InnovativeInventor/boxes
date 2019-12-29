@@ -1,0 +1,10 @@
+command:
+  git:
+    # required attributes
+    exit-status: 1
+    # optional attributes
+    stdout:
+    - "usage: git "
+    stderr: []
+    timeout: 10000 # in milliseconds
+

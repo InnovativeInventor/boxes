@@ -1,0 +1,7 @@
+MONOBOX ruby
+MONOBOX git
+MONOBOX make
+MONOBOX gcc
+MONOBOX build
+
+RUN gem install bundle
